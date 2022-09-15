@@ -28,7 +28,10 @@ $(document).ready(function () {
 								},
 			ajax: {
                        url: 'https://opensheet.elk.sh/1OWLHbaylVdtpe69iHDSubjp4hhBv78WzCt10wzd9psw/1',
-                       dataSrc: '',
+                       	dataSrc: '',
+			scrollY: 200,
+			deferRender:    true,
+			scroller:       true
 				  },
       dom: 'PQlfrtip',
       columns: [
@@ -80,7 +83,7 @@ $(document).ready(function () {
     },
     
    "searching": true,
-   "scrollY": 600,
+  // "scrollY": 600,
    "paging":   false,
    "ordering": false,
    "order": [[3, 'desc']],
