@@ -26,14 +26,18 @@ $(document).ready(function () {
 			language: {
 									url: 'https://cdn.datatables.net/plug-ins/1.12.1/i18n/de-DE.json'
 								},
-	serverSide: true,
-		                processing: true,
+	
+		                
         
         ajax: {
             url: 'https://opensheet.elk.sh/1OWLHbaylVdtpe69iHDSubjp4hhBv78WzCt10wzd9psw/1',
             dataSrc: '',
         },
-		
+	deferRender:    true,
+        scrollY:        200,
+        scrollCollapse: true,
+        scroller:       true,
+        select:         true,
 		
       dom: 'PQlfrtip',
       columns: [
@@ -86,7 +90,7 @@ $(document).ready(function () {
     
    "searching": true,
   // "scrollY": 600,
-   "paging":   true,
+   "paging":   false,
    "ordering": false,
    "order": [[3, 'desc']],
    
