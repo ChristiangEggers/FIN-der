@@ -28,12 +28,11 @@ $(document).ready(function () {
 								},
 	{
 		ajax:           "https://opensheet.elk.sh/1OWLHbaylVdtpe69iHDSubjp4hhBv78WzCt10wzd9psw/1",
-		deferRender:    true,
-		scrollY:        200,
-		scrollCollapse: true,
-		scroller: {
-        loadingIndicator: true
-    },
+		    deferRender: true,
+		    scrollY:     300,
+		    scroller: {
+			loadingIndicator: true
+		    }
 	},
 		
       dom: 'PQlfrtip',
