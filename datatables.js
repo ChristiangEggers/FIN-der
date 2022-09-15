@@ -87,7 +87,7 @@ $(document).ready(function () {
     
    "searching": true,
   // "scrollY": 600,
-   "paging":   false,
+   "paging":   true,
    "ordering": false,
    "order": [[3, 'desc']],
    
