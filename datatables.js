@@ -26,13 +26,14 @@ $(document).ready(function () {
 			language: {
 									url: 'https://cdn.datatables.net/plug-ins/1.12.1/i18n/de-DE.json'
 								},
-			ajax: {
-                       url: 'https://opensheet.elk.sh/1OWLHbaylVdtpe69iHDSubjp4hhBv78WzCt10wzd9psw/1',
-                       	dataSrc: '',
-			scrollY: 200,
-			deferRender:    true,
-			scroller:       true
-				  },
+	{
+		ajax:           "https://opensheet.elk.sh/1OWLHbaylVdtpe69iHDSubjp4hhBv78WzCt10wzd9psw/1",
+		deferRender:    true,
+		scrollY:        200,
+		scrollCollapse: true,
+		scroller:       true
+	},
+		
       dom: 'PQlfrtip',
       columns: [
                   {
