@@ -33,11 +33,7 @@ $(document).ready(function () {
             url: 'https://opensheet.elk.sh/1OWLHbaylVdtpe69iHDSubjp4hhBv78WzCt10wzd9psw/1',
             dataSrc: '',
         },
-	deferRender:    true,
-        scrollY:        200,
-        scrollCollapse: true,
-        scroller:       true,
-        select:         true,
+	scrollY:        200,
 		
       dom: 'PQlfrtip',
       columns: [
