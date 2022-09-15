@@ -62,7 +62,7 @@ $(document).ready(function () {
 { data: 'ALZ - Schweiz' },
 { data: 'ALZ - Sonstiges' },
 { data: 'VIN-Zuteilung' },
-{ data: 'VIN' },
+{ data: 'Fin-Vin' },
 { data: 'Herstellungsdatum' },
 { data: 'Übergabedatum (geplant)' },
 { data: 'Übergabedatum (tatsächlich)' },
@@ -96,13 +96,13 @@ $(document).ready(function () {
                         {
                             label: 'Hat bisher keine VIN-Zuteilung bzw. Abschlussrechnung',
                             value: function(rowData, rowIdx) {
-                                return rowData['VIN-Zuteilung'] === '' || rowData['VIN'] === '';
+                                return rowData['VIN-Zuteilung'] === '' || rowData['Fin-Vin'] === '';
                             }
                         },
                         {
                             label: 'Hat eine VIN-Zuteilung bzw. Abschlussrechnung',
                             value: function(rowData, rowIdx) {
-                                return rowData['VIN-Zuteilung'] !== '' || rowData['VIN'] !== '';
+                                return rowData['VIN-Zuteilung'] !== '' || rowData['Fin-Vin'] !== '';
                             }
                         }
                         
