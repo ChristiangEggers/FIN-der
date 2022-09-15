@@ -31,7 +31,9 @@ $(document).ready(function () {
 		deferRender:    true,
 		scrollY:        200,
 		scrollCollapse: true,
-		scroller:       true
+		scroller: {
+        loadingIndicator: true
+    },
 	},
 		
       dom: 'PQlfrtip',
