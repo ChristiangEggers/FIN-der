@@ -79,13 +79,13 @@ $(document).ready(function () {
                                                 {
                             label: 'Hat eine VIN-Zuteilung bzw. Abschlussrechnung',
                             value: function(rowData, rowIdx) {
-                                return rowData['.VIN'] !== '' || rowData['VIN-Zuteilung'] !== '';
+                                return rowData['VIN'] !== '' || rowData['VIN-Zuteilung'] !== '';
                             }
                         },
                         {
                             label: 'Hat bisher keine VIN-Zuteilung bzw. Abschlussrechnung',
                             value: function(rowData, rowIdx) {
-                                return rowData['.VIN'] === '' || rowData['VIN-Zuteilung'] === '';
+                                return rowData['VIN'] === '' || rowData['VIN-Zuteilung'] === '';
                                     }
                                 }
 
