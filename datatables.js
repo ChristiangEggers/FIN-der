@@ -64,7 +64,7 @@ $(document).ready(function () {
       responsive: {
             details: {
                 renderer: function(api, rowIdx, columns){
-                    let render_method = $.fn.dataTable.Responsive.renderer.tableAll({tableClass: 'ui table'})
+                    let render_method = $.fn.dataTable.Responsive.renderer.tableAll( {tableClass: ''})
                     return render_method(api, rowIdx, columns.filter(column => column.hidden && column.data))
                   }
               }
@@ -85,7 +85,7 @@ $(document).ready(function () {
                         {
                             label: 'Hat bisher keine VIN-Zuteilung bzw. Abschlussrechnung',
                             value: function(rowData, rowIdx) {
-                                return rowData['VIN'] === '' || rowData['VIN-Zuteilung'] === '';
+                                return rowData['VIN'] === '' && rowData['VIN-Zuteilung'] === '';
                                     }
                                 }
 
@@ -93,7 +93,7 @@ $(document).ready(function () {
 
                         }
                     ],
-                    cascadePanes: false,
+            cascadePanes: false,
                     dtOpts: {select: {style: 'multi'} }
 					},
     	dom: 'PQlfrtip',
