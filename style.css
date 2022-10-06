@@ -29,6 +29,12 @@ div.dtsp-panesContainer {
   text-overflow: ellipsis;
 }
 
+.truncate-mini {
+  max-width:25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 
 table.dataTable.dtr-inline.collapsed > tbody > tr > td.details-control:first-child:before { display: none;}
