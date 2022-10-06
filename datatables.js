@@ -133,13 +133,6 @@ function showTable() {
 function testFunction() {
 var table = $('#table').DataTable();
 
-  //document.getElementById("demo").innerHTML = "Hello World";
-
-//window.alert("sometext");
-
-// Hide two columns
-//table.columns( [1,2] ).visible( false );
-
 
 alert( 'column visibility are set to: '+table.columns().responsiveHidden().join(', ') );
 
