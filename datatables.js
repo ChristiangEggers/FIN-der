@@ -31,8 +31,8 @@ $(document).ready(function () {
             { data: 'Bestelldatum', type: 'date-eu', className:'truncate dt-body-left' },
             { data: 'Bestellnummer', className:'truncate dt-body-left' }, 
             { data: 'Bestellung geschoben?' },
-            { data: 'Außenfarbe (Lack)', className:'truncate dt-body-left' },
-            { data: 'Innenraum', className:'truncate dt-body-left' },
+            { data: 'Außenfarbe (Lack)', className:'truncate-mini dt-body-left' },
+            { data: 'Innenraum', className:'truncate-mini dt-body-left' },
             { data: 'Model' },
             { data: 'Variante' },
             { data: 'Felgen', className: 'truncate dt-body-left'},
@@ -49,7 +49,7 @@ $(document).ready(function () {
             { data: 'ALZ - Schweiz' },
             { data: 'ALZ - Sonstiges' },
             { data: 'VIN-Zuteilung', type: 'date-eu', className:'truncate dt-body-left' },
-            { data: 'VIN', className: 'truncate dt-body-left'},
+            { data: 'VIN', className: 'truncate-mini dt-body-left'},
             { data: 'Herstellungsdatum', type: 'date-eu', className:'truncate dt-body-left' },
             { data: 'Übergabedatum (geplant)', type: 'date-eu', className:'truncate dt-body-left' },
             { data: 'Übergabedatum (tatsächlich)', type: 'date-eu', className:'truncate dt-body-left' },
@@ -64,9 +64,8 @@ $(document).ready(function () {
             { responsivePriority: 1, targets: [0,2,3,4,6,7,10,16,17,19,23,24] },
             { responsivePriority: 2, targets: [25, 26, 27, 29, 30, 31, 32] },
 						{ responsivePriority: 10001, targets: [28, 5, 8, 9, 1, 11, 12, 13, 14, 15, 18, 20, 21, 22] },
-        //truncate long inputs
-        { targets: 2, render: $.fn.dataTable.render.ellipsis(10) }, //user
-        //{ targets: 4, render: $.fn.dataTable.render.ellipsis(11) }, //RN No
+     //truncate long inputs
+        { targets: 2, render: $.fn.dataTable.render.ellipsis(10) }, //username
         { targets: [0, 4, 7], render: $.fn.dataTable.render.ellipsis(6) }, //color
         { targets: [3, 16, 17, 23, 25, 26, 27, 29, 30, 31, 32], render: $.fn.dataTable.render.ellipsis(10) }, //dates
 
@@ -120,6 +119,8 @@ $(document).ready(function () {
             this.data(i++);
         });
     }).draw();
+   
+     
 })
 
 
@@ -140,6 +141,6 @@ table.columns( [0,1] ).visible( true );
 table.columns.adjust().draw( false )
 
 alert( 'column visibility are set to: '+table.columns().responsiveHidden().join(', ') );
-
 }
 
+ 
